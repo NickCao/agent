@@ -13,7 +13,7 @@
   },
   "scripts": {
     "build": "tsc --project ./src/tsconfig.json",
-    "clean": "rimraf ./node_modules ./dist",
+    "clean": "rimraf ./dist",
     "test:skip": "cross-env NODE_OPTIONS=--loader=ts-node/esm jasmine --config=jasmine.json",
     "coverage": "nyc npm test",
     "lint": "eslint --ext .ts ."

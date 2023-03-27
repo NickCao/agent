@@ -79,7 +79,7 @@
     "pack": "node ./scripts/release.js",
     "sprites": "node ./scripts/generate-svg-sprites",
     "release": "node ./scripts/release.js",
-    "clean": "lerna run clean && rimraf ./node_modules ./dist ./tmp",
+    "clean": "lerna clean --yes && lerna run clean && rimraf ./node_modules ./dist ./tmp",
     "convert-user-config-to-bin": "cross-env TS_NODE_PROJECT=./packages/usb/tsconfig.json node --loader ts-node/esm ./packages/usb/user-config-json-to-bin.ts"
   }
 }
